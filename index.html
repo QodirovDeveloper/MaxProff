@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>MaxProff</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            roboto: ['Roboto', 'sans-serif'],
+          },
+          colors: {
+            clifford: '#6CAC3D',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="mt-5 ml-4 mr-4 md:ml-14 md:mr-14 lg:ml-24 lg:mr-24 font-roboto">
+
+  <nav>
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="sm:hidden">
+        <i class="fa-solid fa-bars fa-flip"></i>
+      </div>
+      <img src="/images/logo.svg" alt="logo MaxProff">
+      <div class="hover:bg-transparent hover:text-clifford sm:hidden text-white bg-clifford border-2 border-clifford py-[11px] px-5 rounded">
+        <i class="fa-solid fa-phone-volume fa-shake"></i>
+      </div>
+      <ul class="items-center gap-6 xl:flex hidden">
+        <li><a href="/">Цены </a></li>
+        <li><a href="/">Услуги</a></li>
+        <li><a href="/">Портфолио</a></li>
+        <li><a href="/">Акции</a></li>
+        <li><a href="/">Преимущества</a></li>
+        <li><a href="/">Блог</a></li>
+        <li><a href="/">Контакты</a></li>
+      </ul>
+      <div class="sm:flex hidden gap-6">
+        <div class="">
+          <p>
+            <i class="fa-solid fa-phone-volume fa-shake"></i>
+            +7 (233) 222-22-22
+          </p>
+          <p>
+            08:00 - 22:00, без выходных
+          </p>
+        </div>
+        <div class="max-xl:flex hidden gap-5">
+          <a href="#">
+            <i class="fa-brands fa-viber fa-beat" style="color: #5C4CBB;"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-whatsapp fa-beat" style="color: #72A82B;"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-telegram fa-beat" style="color: #74C0FC;"></i>
+          </a>
+        </div>
+        <a class="text-clifford" href="#">
+          Заказать звонок
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!--
+
+Breakpoint prefix	Minimum width	CSS
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... }
+  -->
+</body>
+
+</html>
