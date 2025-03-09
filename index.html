@@ -22,6 +22,7 @@
           },
           colors: {
             clifford: '#6CAC3D',
+            preliminary: '#2D4872',
           }
         }
       }
@@ -31,35 +32,38 @@
 
 <body class="mt-5 ml-4 mr-4 md:ml-14 md:mr-14 lg:ml-24 lg:mr-24 font-roboto">
 
-  <nav>
-    <div class="container mx-auto flex items-center justify-between">
-      <div class="sm:hidden">
+  <nav class="container mx-auto">
+    <div class="flex items-center justify-between">
+      <div class="cursor-pointer sm:hidden text-preliminary text-3xl">
         <i class="fa-solid fa-bars fa-flip"></i>
       </div>
-      <img src="/images/logo.svg" alt="logo MaxProff">
-      <div class="hover:bg-transparent hover:text-clifford sm:hidden text-white bg-clifford border-2 border-clifford py-[11px] px-5 rounded">
+      <a href="#">
+        <img src="/images/logo.svg" alt="logo MaxProff">
+      </a>
+      <a href="#"
+        class="hover:bg-transparent hover:text-clifford transition-all duration-300 sm:hidden text-white bg-clifford border-2 border-clifford py-[11px] px-5 rounded">
         <i class="fa-solid fa-phone-volume fa-shake"></i>
-      </div>
-      <ul class="items-center gap-6 xl:flex hidden">
-        <li><a href="/">Цены </a></li>
-        <li><a href="/">Услуги</a></li>
-        <li><a href="/">Портфолио</a></li>
-        <li><a href="/">Акции</a></li>
-        <li><a href="/">Преимущества</a></li>
-        <li><a href="/">Блог</a></li>
-        <li><a href="/">Контакты</a></li>
+      </a>
+      <ul class="items-center gap-4 xl:flex hidden font-normal text-[16px]">
+        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Цены </a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Услуги</a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Портфолио</a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Акции</a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Преимущества</a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Блог</a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Контакты</a></li>
       </ul>
-      <div class="sm:flex hidden gap-6">
+      <div class="sm:flex hidden items-center gap-6">
         <div class="">
-          <p>
+          <a href="#" class="font-bold text-[15px] lg:text-[18px]">
             <i class="fa-solid fa-phone-volume fa-shake"></i>
             +7 (233) 222-22-22
-          </p>
-          <p>
+          </a>
+          <p class="font-normal text-[12px] lg:text-[14px]">
             08:00 - 22:00, без выходных
           </p>
         </div>
-        <div class="max-xl:flex hidden gap-5">
+        <div class="max-xl:flex hidden gap-5 text-2xl">
           <a href="#">
             <i class="fa-brands fa-viber fa-beat" style="color: #5C4CBB;"></i>
           </a>
@@ -70,12 +74,28 @@
             <i class="fa-brands fa-telegram fa-beat" style="color: #74C0FC;"></i>
           </a>
         </div>
-        <a class="text-clifford" href="#">
+        <a class="hover:bg-clifford hover:text-white transition-all duration-300 text-clifford border-clifford border-[1px] py-3 px-5 rounded font-medium text-[16px]"
+          href="#">
           Заказать звонок
         </a>
       </div>
     </div>
+    <div class="sm:block hidden border-b-2 mt-2 mb-2 border-clifford"></div>
+    <ul class="items-center gap-5 max-xl:flex max-sm:hidden hidden  font-normal text-[16px]">
+      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Цены </a></li>
+      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Услуги</a></li>
+      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Портфолио</a></li>
+      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Акции</a></li>
+      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Преимущества</a></li>
+      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Блог</a></li>
+      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Контакты</a></li>
+    </ul>
+    <div class="max-xl:flex hidden max-sm:hidden border-b-2 mt-2 mb-2 border-clifford"></div>
   </nav>
+
+
+
+
 
   <!--
 
