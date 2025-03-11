@@ -23,110 +23,150 @@
           colors: {
             clifford: '#6CAC3D',
             preliminary: '#2D4872',
+            secondary: '#171616',
           }
         }
       }
     }
   </script>
 </head>
-
-<body class="mt-5 ml-4 mr-4 md:ml-14 md:mr-14 lg:ml-16 lg:mr-16 font-roboto">
-
-  <nav class="container mx-auto">
-    <div class="flex items-center justify-between">
-      <div class="cursor-pointer sm:hidden text-preliminary text-3xl">
-        <i class="fa-solid fa-bars fa-flip"></i>
-      </div>
-      <a href="#">
-        <img src="/images/logo.svg" alt="logo MaxProff">
-      </a>
-      <a href="#"
-        class="hover:bg-transparent hover:text-clifford transition-all duration-300 sm:hidden text-white bg-clifford border-2 border-clifford py-[11px] px-5 rounded">
-        <i class="fa-solid fa-phone-volume fa-shake"></i>
-      </a>
-      <ul class="items-center gap-4 xl:flex hidden font-normal text-[16px]">
-        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Цены </a></li>
-        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Услуги</a></li>
-        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Портфолио</a></li>
-        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Акции</a></li>
-        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Преимущества</a></li>
-        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Блог</a></li>
-        <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Контакты</a></li>
-      </ul>
-      <div class="sm:flex hidden items-center gap-6">
-        <div class="">
-          <a href="#" class="font-bold text-[15px] lg:text-[18px]">
-            <i class="fa-solid fa-phone-volume fa-shake"></i>
-            +7 (233) 222-22-22
+<body>
+  <header class="mt-5 ml-4 mr-4 md:ml-14 md:mr-14 lg:ml-16 lg:mr-16 font-roboto">
+    <nav class="container mx-auto">
+      <div class="flex items-center justify-between">
+        <div class="cursor-pointer sm:hidden text-preliminary text-3xl">
+          <i class="fa-solid fa-bars fa-flip"></i>
+        </div>
+        <a href="#">
+          <img src="/images/logo.svg" alt="logo MaxProff">
+        </a>
+        <a href="#"
+          class="hover:bg-transparent hover:text-clifford transition-all duration-300 sm:hidden text-white bg-clifford border-2 border-clifford py-[11px] px-5 rounded">
+          <i class="fa-solid fa-phone-volume fa-shake"></i>
+        </a>
+        <ul class="items-center gap-4 xl:flex hidden font-normal text-[16px]">
+          <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Цены </a></li>
+          <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Услуги</a></li>
+          <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Портфолио</a></li>
+          <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Акции</a></li>
+          <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Преимущества</a></li>
+          <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Блог</a></li>
+          <li><a href="/" class="hover:text-preliminary duration-300 p-2 inline-block">Контакты</a></li>
+        </ul>
+        <div class="sm:flex hidden items-center gap-6">
+          <div class="">
+            <a href="#" class="font-bold text-[15px] lg:text-[18px]">
+              <i class="fa-solid fa-phone-volume fa-shake"></i>
+              +7 (233) 222-22-22
+            </a>
+            <p class="font-normal text-[12px] lg:text-[14px]">
+              08:00 - 22:00, без выходных
+            </p>
+          </div>
+          <div class="max-xl:flex hidden gap-5 text-2xl">
+            <a href="#">
+              <i class="fa-brands fa-viber fa-beat" style="color: #5C4CBB;"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-whatsapp fa-beat" style="color: #72A82B;"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-telegram fa-beat" style="color: #74C0FC;"></i>
+            </a>
+          </div>
+          <a class="hover:bg-clifford hover:text-white transition-all duration-300 text-clifford border-clifford border-[1px] py-3 px-5 rounded font-medium text-[16px]"
+            href="#">
+            Заказать звонок
           </a>
-          <p class="font-normal text-[12px] lg:text-[14px]">
-            08:00 - 22:00, без выходных
+        </div>
+      </div>
+      <div class="sm:block hidden border-b-2 mt-2 mb-2 border-clifford"></div>
+      <ul class="items-center gap-5 max-xl:flex max-sm:hidden hidden  font-normal text-[16px]">
+        <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Цены </a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Услуги</a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Портфолио</a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Акции</a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Преимущества</a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Блог</a></li>
+        <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Контакты</a></li>
+      </ul>
+      <div class="max-xl:flex hidden max-sm:hidden border-b-2 mt-2 mb-2 border-clifford"></div>
+
+      <ul class="sm:flex hidden items-center gap-15 justify-between">
+        <li class="flex items-center lg:w-48 sm:w-[70px]">
+          <a href="#" class="p-2 inline-block">Ремонт квартир</a>
+          <span class="">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </li>
+        <li class="flex items-center lg:w-48 sm:w-[70px]">
+          <a href="#" class="p-2.5 inline-block">Дизайн интерьера</a>
+          <span class="">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </li>
+        <li class="flex items-center lg:w-48 sm:w-[70px]">
+          <a href="#" class="p-2.5 inline-block">Ремонт комнат</a>
+          <span class="">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </li>
+        <li class="flex items-center lg:w-48 sm:w-[70px]">
+          <a href="#" class="p-2.5 inline-block">Дома и коттеджи</a>
+          <span class="">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </li>
+        <li class="flex items-center lg:w-48 sm:w-[70px]">
+          <a href="#" class="p-2.5 inline-block">Прочие услуги</a>
+          <span class="">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </li>
+      </ul>
+      <div class="sm:block hidden border-b-2 mt-2 mb-6 border-clifford"></div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto font-roboto">
+    <div class="text-[#171616] lg:bg-[url(/images/bg.png)] lg:bg-no-repeat lg:bg-right lg:bg-cover lg:h-[710px]
+    bg-[url(/images/bg.png)] bg-no-repeat bg-right bg-cover h-[680px] mt-6 py-9 px-4">
+      <h2 class="font-bold text-[34px]">
+        РЕМОНТ КВАРТИР <br>
+        В МОСКВЕ И МО
+      </h2>
+      <p class="font-bold text-3xl mt-5">
+        от <span class="text-[52px] bg-clifford text-white py-0.5 px-2 rounded-lg">2450</span> руб/м2
+      </p>
+      <div class="grid grid-cols-2 max-w-[460px] md:mt-16 mt-10 flex-wrap">
+        <div class="mb-4">
+          <img src="images/icon2.png" alt="icon">
+          <p class="font-bold text-[18px]">
+            Оплата по факту <br> приема работ
           </p>
         </div>
-        <div class="max-xl:flex hidden gap-5 text-2xl">
-          <a href="#">
-            <i class="fa-brands fa-viber fa-beat" style="color: #5C4CBB;"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-whatsapp fa-beat" style="color: #72A82B;"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-telegram fa-beat" style="color: #74C0FC;"></i>
-          </a>
+        <div class="mb-4">
+          <img src="images/icon1.png" alt="icon">
+          <p class="font-bold text-[18px]">
+            Замер и составление
+          </p>
         </div>
-        <a class="hover:bg-clifford hover:text-white transition-all duration-300 text-clifford border-clifford border-[1px] py-3 px-5 rounded font-medium text-[16px]"
-          href="#">
-          Заказать звонок
-        </a>
+        <div class="mb-4">
+          <img src="images/icon4.png" alt="icon">
+          <p class="font-bold text-[18px]">
+            Выезд сметчика
+          </p>
+        </div>
+        <div class="mb-4 mt-1">
+          <img src="images/icon3.png" alt="icon">
+          <p class="font-bold text-[18px]">
+            Гарантия 3 года
+          </p>
+        </div>
+
       </div>
     </div>
-    <div class="sm:block hidden border-b-2 mt-2 mb-2 border-clifford"></div>
-    <ul class="items-center gap-5 max-xl:flex max-sm:hidden hidden  font-normal text-[16px]">
-      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Цены </a></li>
-      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Услуги</a></li>
-      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Портфолио</a></li>
-      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Акции</a></li>
-      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Преимущества</a></li>
-      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Блог</a></li>
-      <li><a href="/" class="hover:text-preliminary duration-300 p-1 inline-block">Контакты</a></li>
-    </ul>
-    <div class="max-xl:flex hidden max-sm:hidden border-b-2 mt-2 mb-2 border-clifford"></div>
-
-    <ul class="sm:flex hidden items-center gap-15 justify-between">
-      <li class="flex items-center lg:w-48 sm:w-[70px]">
-        <a href="#" class="p-2 inline-block">Ремонт квартир</a>
-        <span class="">
-          <i class="fa-solid fa-chevron-down"></i>
-        </span>
-      </li>
-      <li class="flex items-center lg:w-48 sm:w-[70px]">
-        <a href="#" class="p-2.5 inline-block">Дизайн интерьера</a>
-        <span class="">
-          <i class="fa-solid fa-chevron-down"></i>
-        </span>
-      </li>
-      <li class="flex items-center lg:w-48 sm:w-[70px]">
-        <a href="#" class="p-2.5 inline-block">Ремонт комнат</a>
-        <span class="">
-          <i class="fa-solid fa-chevron-down"></i>
-        </span>
-      </li>
-      <li class="flex items-center lg:w-48 sm:w-[70px]">
-        <a href="#" class="p-2.5 inline-block">Дома и коттеджи</a>
-        <span class="">
-          <i class="fa-solid fa-chevron-down"></i>
-        </span>
-      </li>
-      <li class="flex items-center lg:w-48 sm:w-[70px]">
-        <a href="#" class="p-2.5 inline-block">Прочие услуги</a>
-        <span class="">
-          <i class="fa-solid fa-chevron-down"></i>
-        </span>
-      </li>
-    </ul>
-  </nav>
-
-  
+  </main>
 
 
 
